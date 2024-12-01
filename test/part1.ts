@@ -20,7 +20,7 @@ type PersonType = {
 
 const people: PersonType[] = [
   { name: "Hossein", age: 23, gender: "male" },
-  { name: "Zahra", age: 25, gender: "female" },
+  { name: "Leila", age: 25, gender: "female" },
   { name: "Ahmad", age: 23, gender: "male" },
   { name: "Kazem", age: 25, gender: "male" },
 ];

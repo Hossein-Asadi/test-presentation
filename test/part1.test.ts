@@ -9,7 +9,7 @@ type PersonType = {
 
 const people: PersonType[] = [
   { name: "Hossein", age: 23, gender: "male" },
-  { name: "Zahra", age: 25, gender: "female" },
+  { name: "Leila", age: 25, gender: "female" },
   { name: "Ahmad", age: 23, gender: "male" },
   { name: "Kazem", age: 25, gender: "male" },
 ];
@@ -22,7 +22,7 @@ describe("test groupBy function", () => {
         { name: "Ahmad", age: 23, gender: "male" },
       ],
       25: [
-        { name: "Zahra", age: 25, gender: "female" },
+        { name: "Leila", age: 25, gender: "female" },
         { name: "Kazem", age: 25, gender: "male" },
       ],
     };
@@ -35,7 +35,7 @@ describe("test groupBy function", () => {
   it("test group people by name", () => {
     const expected = {
       Hossein: [{ name: "Hossein", age: 23, gender: "male" }],
-      Zahra: [{ name: "Zahra", age: 25, gender: "female" }],
+      Leila: [{ name: "Leila", age: 25, gender: "female" }],
       Ahmad: [{ name: "Ahmad", age: 23, gender: "male" }],
       Kazem: [{ name: "Kazem", age: 25, gender: "male" }],
     };
@@ -52,7 +52,7 @@ describe("test groupBy function", () => {
         { name: "Ahmad", age: 23, gender: "male" },
         { name: "Kazem", age: 25, gender: "male" },
       ],
-      female: [{ name: "Zahra", age: 25, gender: "female" }],
+      female: [{ name: "Leila", age: 25, gender: "female" }],
     };
 
     const result = groupBy(people, (person) => person.gender);
@@ -64,7 +64,7 @@ describe("test groupBy function", () => {
     const expected = {
       undefined: [
         { name: "Hossein", age: 23, gender: "male" },
-        { name: "Zahra", age: 25, gender: "female" },
+        { name: "Leila", age: 25, gender: "female" },
         { name: "Ahmad", age: 23, gender: "male" },
         { name: "Kazem", age: 25, gender: "male" },
       ],

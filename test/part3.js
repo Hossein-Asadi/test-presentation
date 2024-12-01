@@ -1,8 +1,7 @@
-// notificationManager.js
 export class EmailService {
     sendEmail(to, subject, body) {
         console.log(`Sending email to ${to} with subject: ${subject}`);
-        return true; // فرض می‌کنیم که ایمیل با موفقیت ارسال می‌شود.
+        return true;
     }
 }
 
